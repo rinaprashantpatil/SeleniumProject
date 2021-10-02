@@ -30,6 +30,7 @@ public class SimpleFormDemoTestTestGrid {
   JavascriptExecutor js;
   @Before
   public void setUp() throws MalformedURLException {
+    // new change
     driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), DesiredCapabilities.firefox());
     js = (JavascriptExecutor) driver;
     vars = new HashMap<String, Object>();
